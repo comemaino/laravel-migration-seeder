@@ -20,7 +20,7 @@ class CreateTrainsTable extends Migration
             $table->string('arrival_station', 48);
             $table->time('departure_time');
             $table->time('arrival_time');
-            $table->unsignedSmallInteger('#');
+            $table->unsignedSmallInteger('railway_sys_id');
             $table->unsignedTinyInteger('carriages');
             $table->boolean('on_time');
             $table->boolean('cancelled');
